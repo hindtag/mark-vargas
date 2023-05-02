@@ -632,6 +632,24 @@ video {
   transform-origin: top;
 }
 
+@keyframes open-menu {
+  0% {
+    transform: scaleY(0);
+  }
+
+  80% {
+    transform: scaleY(1.2);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-open-menu {
+  animation: open-menu 0.5s ease-in-out forwards;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -843,14 +861,14 @@ video {
   font-style: italic;
 }
 
+.text-amber-700 {
+  --tw-text-opacity: 1;
+  color: rgb(180 83 9 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-orange-700 {
-  --tw-text-opacity: 1;
-  color: rgb(194 65 12 / var(--tw-text-opacity));
 }
 
 .text-slate-500 {
@@ -871,16 +889,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-indigo-700 {
-  --tw-text-opacity: 1;
-  color: rgb(67 56 202 / var(--tw-text-opacity));
-}
-
-.text-amber-700 {
-  --tw-text-opacity: 1;
-  color: rgb(180 83 9 / var(--tw-text-opacity));
 }
 
 .shadow-xl {
@@ -1151,9 +1159,9 @@ video {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .dark\:text-indigo-300 {
+  .dark\:text-amber-400 {
     --tw-text-opacity: 1;
-    color: rgb(165 180 252 / var(--tw-text-opacity));
+    color: rgb(251 191 36 / var(--tw-text-opacity));
   }
 
   .dark\:text-slate-400 {
@@ -1164,36 +1172,6 @@ video {
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-orange-300 {
-    --tw-text-opacity: 1;
-    color: rgb(253 186 116 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-amber-300 {
-    --tw-text-opacity: 1;
-    color: rgb(252 211 77 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-amber-800 {
-    --tw-text-opacity: 1;
-    color: rgb(146 64 14 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-amber-500 {
-    --tw-text-opacity: 1;
-    color: rgb(245 158 11 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-amber-600 {
-    --tw-text-opacity: 1;
-    color: rgb(217 119 6 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-amber-400 {
-    --tw-text-opacity: 1;
-    color: rgb(251 191 36 / var(--tw-text-opacity));
   }
 }
 
